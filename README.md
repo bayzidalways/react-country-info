@@ -1,100 +1,71 @@
-# Welcome to React Router!
+# 🌍 React Country Info
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A **React-based** web application that fetches and displays **country details** using the **REST Countries API**. Users can search for a country and view key details like:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+✅ Name & Official Name  
+✅ Region & Subregion  
+✅ Capital  
+✅ Population  
+✅ Country Flag
 
-## Features
+## 🚀 Live Demo
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+🔗 [Check Live Version](#) _(Replace with your deployed link if available)_
 
-## Getting Started
+## 📸 Screenshot
 
-### Installation
+![App Screenshot](#) _(Add a relevant screenshot here)_
 
-Install the dependencies:
+## 🛠️ Features
 
-```bash
+- Fetches country data dynamically using `fetch()`
+- Displays key information in a structured format
+- Uses `react-router` for navigation
+- Responsive UI with `Tailwind CSS`
+- Error handling for API failures
+
+## 🏗️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/bayzidalways/react-country-info.git
+   cd react-country-info
+   ```
+
+Install dependencies
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
+Start the development server
 npm run dev
-```
 
-Your application will be available at `http://localhost:5173`.
+Open in browser
+The app runs at http://localhost:5173/
+🔌 API Source
+This project uses the REST Countries API:
+🔗 https://restcountries.com/
 
-## Building for Production
+🤝 Contributing
+Contributions are welcome! To contribute:
 
-Create a production build:
+Fork the repository
+Create a new branch (git checkout -b feature-name)
+Commit changes (git commit -m "Add feature")
+Push to the branch (git push origin feature-name)
+Create a Pull Request
+📄 License
+This project is MIT Licensed.
 
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+⭐ Don't forget to star the repo if you like this project! 🌟
 
 ---
 
-Built with ❤️ using React Router.
+### **Next Steps:**
+
+1. **Create the GitHub Repository**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/bayzidalways/react-country-info.git
+   git push -u origin main
+   ```

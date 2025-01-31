@@ -1,14 +1,9 @@
-import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "react-router";
-
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { useLocation } from "react-router"; // Import useLocation
 import type { Route } from "./+types/root";
 import "./app.css";
+import { Navbar } from "./routes/components/navbar";
+import { Footer } from "./routes/components/footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,7 +37,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const location = useLocation(); // Get the current route
+  const hideFooterOnRoutes = ["/"]; // Add more paths if needed
+
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      {!hideFooterOnRoutes.includes(location.pathname) && <Footer />} {/* Hide footer on "/" */}
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

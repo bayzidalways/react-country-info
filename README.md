@@ -56,16 +56,3 @@ This project is MIT Licensed.
 
 ⭐ Don't forget to star the repo if you like this project! 🌟
 
----
-
-### **Next Steps:**
-
-1. **Create the GitHub Repository**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/bayzidalways/react-country-info.git
-   git push -u origin main
-   ```
